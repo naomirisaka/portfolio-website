@@ -128,6 +128,23 @@ header .container {
 .aboutme-text a { 
     text-decoration: none; 
 }
+
+.socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
 .aboutme-text .greeting { 
     font-family: var(--font-secondary);
     font-size: 1.5rem; 
