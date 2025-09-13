@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Nao's Portfolio</title>
+        <title>Naomi's Portfolio</title>
         <link rel="icon" href="assets/star.png" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Spectral:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Spectral:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -12,15 +12,14 @@
             <div class="container">
                 <div class="logo">
                     <img src="assets/star.png" class="star-icon" alt="Star Icon">
-                    <a href="index.html">Naomi Risaka</a>
+                    <a href="index.html" aria-label="Homepage">Naomi Risaka</a>
                 </div>
-
                 <nav>
                     <ul class="navbar">
                         <li><a href="#aboutme">About Me</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#experience">Experiences</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,16 +31,18 @@
                     <div class="aboutme-text">
                         <p class="greeting">Hello there!</p>
                         <h1>I'm <span class="highlight">Naomi Risaka</span></h1>
-                        <p>I am a third-year <span class = highlight>Informatics Engineering</span> student at <span class = highlight>Bandung Institute of Technology</span> with a keen interest and various experiences in <span class = highlight>data science</span>, <span class = highlight>UI/UX design</span>, and <span class = highlight>programming</span>.</p>
-                        <a href="https://www.instagram.com/naomirisaka" target="_blank" aria-label="instagram">
-                            <img src="assets/instagram.png" alt="Instagram Logo">
-                        </a>
-                        <a href="https://www.linkedin.com/in/naomi-risaka-sitorus-356212323/" target="_blank" aria-label="linkedin">
-                            <img src="assets/linkedin.png" alt="LinkedIn Logo">
-                        </a>
-                        <a href="https://www.github.com/naomirisaka" target="_blank" aria-label="github">
-                            <img src="assets/github.png" alt="Github Logo">
-                        </a>
+                        <p>I am a third-year undergraduate student majoring in <span class = highlight>Informatics Engineering</span> at <span class = highlight>Bandung Institute of Technology</span> with a keen interest and various experiences in <span class = highlight>data science</span>, <span class = highlight>UI/UX design</span>, and <span class = highlight>programming</span>.</p>
+                        <div class="contacts">
+                            <a href="https://www.instagram.com/naomirisaka" target="_blank" aria-label="Instagram">
+                                <img src="assets/instagram.png" alt="Instagram Logo">
+                            </a>
+                            <a href="https://www.linkedin.com/in/naomi-risaka-sitorus-356212323/" target="_blank" aria-label="LinkedIn">
+                                <img src="assets/linkedin.png" alt="LinkedIn Logo">
+                            </a>
+                            <a href="https://www.github.com/naomirisaka" target="_blank" aria-label="Github">
+                                <img src="assets/github.png" alt="Github Logo">
+                            </a>
+                        </div>
                     </div>
                     <div class="aboutme-photo">
                         <img src="assets/nao.jpg" alt="Photo of Nao">
@@ -50,7 +51,7 @@
             </section>
 
             <section id="skills">
-                <h1 class ="section-title">Skills</h1>
+                <h2 class ="section-title">Skills</h2>
                 <div class="container">
                     <div class="skills-grid">
                         <div class="skill-item">
@@ -70,20 +71,16 @@
                             <p>C++</p>
                         </div>
                         <div class="skill-item">
-                            <img src="assets/csharp.png" alt="CSharp Logo" class = "skill-name">
-                            <p>C#</p>
-                        </div>
-                        <div class="skill-item">
                             <img src="assets/go.png" alt="Go Logo" class="skill-name">
                             <p>Go</p>
                         </div>
                         <div class="skill-item">
-                            <img src="assets/mysql.png" alt="MySQL Logo" class="skill-name">
-                            <p>MySQL</p>
-                        </div>
-                        <div class="skill-item">
                             <img src="assets/mariadb.png" alt="MariaDB Logo" class="skill-name">
                             <p>MariaDB</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/mysql.png" alt="MySQL Logo" class="skill-name">
+                            <p>MySQL</p>
                         </div>
                         <div class="skill-item">
                             <img src="assets/postgresql.png" alt="PostgreSQL Logo" class="skill-name">
@@ -118,51 +115,51 @@
             </section>
 
             <section id="projects">
-                <h1 class ="section-title">Projects</h1>
+                <h2 class ="section-title">Projects</h2>
                 <div class="container">
                     <div class="projects-list">
                         <div class="project-item">
                             <img src="assets/tunaz.png" alt="Tunaz" class="project-image">
                             <h2 class="project-title">Tunaz</h2>
                             <p class="project-desc">A garden management application designed to streamline plant care by tracking plant data, watering schedules, and user activities.</p>
-                            <a href="https://github.com/naomirisaka/IF2150-2024-K02-G10-Tunaz" class="project-button">View Project</a>
+                            <a href="https://github.com/naomirisaka/IF2150-2024-K02-G10-Tunaz" class="project-button" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                         <div class="project-item">
                             <img src="assets/anmategra.png" alt="Anmategra" class="project-image">
                             <h2 class="project-title">Anmategra</h2>
                             <p class="project-desc">A student activity management system for ITB, developed to assist activity tracking, simplify event registration, and improve committee management.</p>
-                            <a href="https://drive.google.com/drive/u/0/folders/1-LW1gTb6rLUD7o-uTK9j2yqakm2HVmTr" class="project-button">View Project</a>
+                            <a href="https://drive.google.com/drive/u/0/folders/1-LW1gTb6rLUD7o-uTK9j2yqakm2HVmTr" class="project-button" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                         <div class="project-item">
                             <img src="assets/minekrep.png" alt="Minekrep" class="project-image">
                             <h2 class="project-title">Minekrep</h2>
                             <p class="project-desc">An interactive solution-finder for the game Little Alchemy 2, which efficiently discovers crafting recipes by implementing BFS, DFS, and Bidirectional Search algorithms.</p>
-                            <a href="https://github.com/naomirisaka/Tubes2_Minekrep" class="project-button">View Project</a>
+                            <a href="https://github.com/naomirisaka/Tubes2_Minekrep" class="project-button" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                         <div class="project-item">
                             <img src="assets/matchify.png" alt="Matchify" class="project-image">
                             <h2 class="project-title">Matchify</h2>
                             <p class="project-desc">An ATS-powered CV scanner that automates CV selection by extracting data from PDF resumes and matching candidate qualifications against recruiter criteria to identify ideal job applicants.</p>
-                            <a href="https://github.com/naomirisaka/Tubes3_stimastimastima" class="project-button">View Project</a>
+                            <a href="https://github.com/naomirisaka/Tubes3_stimastimastima" class="project-button" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                         <div class="project-item">
                             <img src="assets/delivora.png" alt="Delivora" class="project-image">
                             <h2 class="project-title">Delivora</h2>
                             <p class="project-desc">A comprehensive delivery service application designed for real-time tracking of packages, shipments, and courier logistics from dispatch to final delivery.</p>
-                            <a href="https://github.com/naomirisaka/if2010-tubes-2-2425-klr" class="project-button">View Project</a>
+                            <a href="https://github.com/naomirisaka/if2010-tubes-2-2425-klr" class="project-button" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                         <div class="project-item">
                             <img src="assets/pantausikecil.png" alt="PantauSiKecil" class="project-image">
                             <h2 class="project-title">PantauSiKecil</h2>
                             <p class="project-desc">A maternity wellness application focused on tracking maternal and infant wellbeing through physical activity and nutritional intake monitoring, and features an integrated AI chatbot for immediate guidance.</p>
-                            <a href="https://github.com/naomirisaka/pantausikecil" class="project-button">View Project</a>
+                            <a href="https://github.com/naomirisaka/pantausikecil" class="project-button" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="experiences">
-                <h1 class="section-title">Experiences</h1>
+                <h2 class="section-title">Experiences</h2>
                 <div class="container">
                     <div class="experiences-list">
                         <div class="experience-item">
@@ -228,14 +225,14 @@
         <footer>
             <div class="container">
                 <div class="contacts">
-                    <a href="https://www.instagram.com/naomirisaka" target="_blank" aria-label="instagram">
-                        <img src="assets/instagram.png" alt="Instagram Logo">
+                    <a href="https://www.instagram.com/naomirisaka" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="assets/instagram-w.png" alt="Instagram Logo">
                     </a>
-                    <a href="https://www.linkedin.com/in/naomi-risaka-sitorus-356212323/" target="_blank" aria-label="linkedin">
-                        <img src="assets/linkedin.png" alt="LinkedIn Logo">
+                    <a href="https://www.linkedin.com/in/naomi-risaka-sitorus-356212323/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="assets/linkedin-w.png" alt="LinkedIn Logo">
                     </a>
-                    <a href="https://www.github.com/naomirisaka" target="_blank" aria-label="github">
-                        <img src="assets/github.png" alt="Github Logo">
+                    <a href="https://www.github.com/naomirisaka" target="_blank" rel="noopener noreferrer" aria-label="Github">
+                        <img src="assets/github-w.png" alt="Github Logo">
                     </a>
                 </div>
                 <p>&copy; 2025 Naomi Risaka Sitorus. All rights reserved.</p>
